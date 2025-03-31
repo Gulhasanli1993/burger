@@ -45,4 +45,65 @@ header {
   header nav .home-color {
     color: #74bebc;
   }
+}
+
+#beautifulfood {
+  background-color: #f4fafb;
+}
+#beautifulfood .box h1 {
+  font-weight: 700;
+  margin-right: 80px;
+}
+#beautifulfood .box span {
+  color: #37b7c3;
+}
+#beautifulfood .box h5 {
+  color: #676f8b;
+  line-height: 1.3;
+}
+#beautifulfood .box .btn {
+  border-radius: 5px;
+  background-color: #38b6c1;
+  color: white;
+}
+@media screen and (min-width: 300px) {
+  #beautifulfood h1 {
+    font-size: 58px;
+  }
+  #beautifulfood h5 {
+    font-size: 15px;
+    margin: 18px 0 40px;
+  }
+  #beautifulfood .btn {
+    padding: 10px 20px;
+    font-size: 15px;
+  }
+  #beautifulfood h4 {
+    font-size: 15px;
+    margin-top: 10px;
+  }
+  #beautifulfood .imgbox {
+    width: 90px;
+    margin-top: 20px;
+  }
+}
+@media screen and (min-width: 750px) {
+  #beautifulfood h1 {
+    font-size: 68px;
+  }
+  #beautifulfood h5 {
+    font-size: 20px;
+    margin: 25px 75px 50px 0;
+  }
+  #beautifulfood .btn {
+    padding: 13px 30px;
+    font-size: 20px;
+  }
+  #beautifulfood h4 {
+    font-size: 20px;
+  }
+  #beautifulfood .imgbox {
+    width: 120px;
+    margin: 20px 0 10px;
+  }
 }/*# sourceMappingURL=style.css.map */
