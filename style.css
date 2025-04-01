@@ -106,4 +106,56 @@ header {
     width: 120px;
     margin: 20px 0 10px;
   }
+}
+
+#freshproducts {
+  background-color: #f1f8f9;
+  padding: 50px 0;
+}
+#freshproducts .textbox h1 {
+  color: #36b3bd;
+  font-weight: 700;
+  width: 400px;
+}
+#freshproducts .textbox h5 {
+  color: #676f8b;
+  margin: 25px 75px 50px 0;
+  line-height: 1.3;
+}
+#freshproducts .textbox .btn {
+  background-color: #38b6c1;
+  color: white;
+  border-radius: 5px;
+}
+@media screen and (min-width: 300px) {
+  #freshproducts h1 {
+    font-size: 40px;
+  }
+  #freshproducts h5 {
+    font-size: 15px;
+  }
+  #freshproducts .btn {
+    padding: 10px 20px;
+    font-size: 15px;
+    margin-top: 10px;
+  }
+  #freshproducts .imgbox {
+    width: 90px;
+    margin-top: 20px;
+  }
+}
+@media screen and (min-width: 750px) {
+  #freshproducts h1 {
+    font-size: 60px;
+  }
+  #freshproducts h5 {
+    font-size: 20px;
+  }
+  #freshproducts .btn {
+    padding: 13px 30px;
+    font-size: 20px;
+  }
+  #freshproducts .imgbox {
+    width: 120px;
+  }
 }/*# sourceMappingURL=style.css.map */
