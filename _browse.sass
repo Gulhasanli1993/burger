@@ -1,4 +1,6 @@
 #browse
+    background-color: #f1f8f9
+    padding: 50px 0
     .textbox
         width: 500px
         text-align: center
@@ -9,29 +11,28 @@
         h4
             font-size: 20px
             color: #6c7480
-            margin: 20px 0
+            margin: 10px 0
             line-height: 1.2
             span
                 color: #3cc1d8
                 text-decoration-line: underline
-    .btn
-        font-size: 18px
-        border: 0.5px solid #bdbdbd
-        padding: 15px 46px
-        margin: 0 20px
-        border-radius: 5px
-    .bgc
-        background-color: #3cc1d8
-        color: #ffff
+    .btnbox
+        .btn
+            font-size: 18px
+            border: 0.5px solid #bdbdbd
+            padding: 15px 46px
+            margin: 10px 20px
+            border-radius: 5px
+        .bgc
+            background-color: #3cc1d8
+            color: #ffff
     .box
+        background-color: #ffff
         padding: 30px
-        .imgbox
+        img
             width: 150px
             border-radius: 10px
         .textbox
-            text-align: left
-            width: auto
-            margin-left: 20px
             .minibox
                 h2
                     font-size: 22px
@@ -50,10 +51,48 @@
                     border: 1px solid #e1e1e1
                     background-color: #e9e9e9
                     width: 50px
+                    margin-right: 20px
                 .btn
                     background-color: #3cc1d8
                     color: #ffff
                     padding: 7px 20px
     .big
-        padding: 17px 53px
-        margin-top: 50px
+        background-color: #3cc1d8
+        color: #ffff
+
+    @media screen and ( min-width: 300px)
+        .btnbox
+            display: flex
+            flex-direction: column
+        .box
+            display: flex
+            flex-direction: column
+            .textbox
+                width: 300px
+                text-align: left
+                margin-top: 10px
+                line-height: 1.4
+                margin-left: 100px
+            .imgbox
+                margin-right: 10px
+        .big
+            padding: 12px 48px
+            margin-top: 30px
+
+    @media screen and ( min-width: 750px )
+        .btnbox
+            display: flex
+            flex-direction: row
+        .box
+            display: flex
+            flex-direction: row
+            .textbox
+                width: auto
+                text-align: left
+                margin-left: 20px
+            .minibox
+                display: flex
+                justify-content: space-between
+        .big
+            padding: 17px 53px
+            margin-top: 50px

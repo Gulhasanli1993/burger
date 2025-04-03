@@ -214,6 +214,10 @@ header {
   }
 }
 
+#browse {
+  background-color: #f1f8f9;
+  padding: 50px 0;
+}
 #browse .textbox {
   width: 500px;
   text-align: center;
@@ -226,35 +230,31 @@ header {
 #browse .textbox h4 {
   font-size: 20px;
   color: #6c7480;
-  margin: 20px 0;
+  margin: 10px 0;
   line-height: 1.2;
 }
 #browse .textbox h4 span {
   color: #3cc1d8;
   text-decoration-line: underline;
 }
-#browse .btn {
+#browse .btnbox .btn {
   font-size: 18px;
   border: 0.5px solid #bdbdbd;
   padding: 15px 46px;
-  margin: 0 20px;
+  margin: 10px 20px;
   border-radius: 5px;
 }
-#browse .bgc {
+#browse .btnbox .bgc {
   background-color: #3cc1d8;
   color: white;
 }
 #browse .box {
+  background-color: white;
   padding: 30px;
 }
-#browse .box .imgbox {
+#browse .box img {
   width: 150px;
   border-radius: 10px;
-}
-#browse .box .textbox {
-  text-align: left;
-  width: auto;
-  margin-left: 20px;
 }
 #browse .box .textbox .minibox h2 {
   font-size: 22px;
@@ -277,6 +277,7 @@ header {
   border: 1px solid #e1e1e1;
   background-color: #e9e9e9;
   width: 50px;
+  margin-right: 20px;
 }
 #browse .box .textbox .add .btn {
   background-color: #3cc1d8;
@@ -284,6 +285,104 @@ header {
   padding: 7px 20px;
 }
 #browse .big {
-  padding: 17px 53px;
-  margin-top: 50px;
+  background-color: #3cc1d8;
+  color: white;
+}
+@media screen and (min-width: 300px) {
+  #browse .btnbox {
+    display: flex;
+    flex-direction: column;
+  }
+  #browse .box {
+    display: flex;
+    flex-direction: column;
+  }
+  #browse .box .textbox {
+    width: 300px;
+    text-align: left;
+    margin-top: 10px;
+    line-height: 1.4;
+    margin-left: 100px;
+  }
+  #browse .box .imgbox {
+    margin-right: 10px;
+  }
+  #browse .big {
+    padding: 12px 48px;
+    margin-top: 30px;
+  }
+}
+@media screen and (min-width: 750px) {
+  #browse .btnbox {
+    display: flex;
+    flex-direction: row;
+  }
+  #browse .box {
+    display: flex;
+    flex-direction: row;
+  }
+  #browse .box .textbox {
+    width: auto;
+    text-align: left;
+    margin-left: 20px;
+  }
+  #browse .box .minibox {
+    display: flex;
+    justify-content: space-between;
+  }
+  #browse .big {
+    padding: 17px 53px;
+    margin-top: 50px;
+  }
+}
+
+#order {
+  padding: 50px 0;
+}
+#order .textbox h1 {
+  font-size: 60px;
+  font-weight: 700;
+  color: #36b3bd;
+}
+#order .textbox h5 {
+  font-size: 20px;
+  color: #676f8b;
+  margin: 25px 75px 50px 0;
+  line-height: 1.3;
+}
+#order .textbox .btn {
+  width: 200px;
+  height: 50px;
+  color: white;
+  background-color: #38b6c1;
+  border-radius: 5px;
+}
+@media screen and (min-width: 300px) {
+  #order img {
+    width: 400px;
+  }
+  #order .textbox {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  #order .textbox .btn {
+    font-size: 18px;
+    padding: 8px 15px;
+    margin-left: 70px;
+  }
+}
+@media screen and (min-width: 800px) {
+  #order img {
+    width: 600px;
+  }
+  #order .textbox {
+    display: flex;
+    text-align: left;
+  }
+  #order .textbox .btn {
+    font-size: 20px;
+    padding: 10px 34px;
+    margin-left: 0;
+  }
 }/*# sourceMappingURL=style.css.map */
