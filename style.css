@@ -462,6 +462,23 @@ header {
 #support .bgc {
   background-color: #35b6c1;
 }
-#support img {
-  margin-right: 40px;
+@media screen and (min-width: 300px) {
+  #support .textbox {
+    width: 550px;
+    height: 400px;
+  }
+  #support .imgbox img {
+    width: 550px;
+    height: 400px;
+  }
+}
+@media screen and (min-width: 800px) {
+  #support .textbox {
+    width: 630px;
+    height: 500px;
+  }
+  #support .imgbox img {
+    width: 630px;
+    height: 500px;
+  }
 }/*# sourceMappingURL=style.css.map */
