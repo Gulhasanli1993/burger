@@ -118,11 +118,13 @@ header {
   padding: 50px 0;
 }
 #freshproducts .textbox h1 {
+  font-size: 60px;
   color: #36b3bd;
   font-weight: 700;
   width: 400px;
 }
 #freshproducts .textbox h5 {
+  font-size: 20px;
   color: #676f8b;
   margin: 25px 75px 50px 0;
   line-height: 1.3;
@@ -131,34 +133,37 @@ header {
   background-color: #38b6c1;
   color: white;
   border-radius: 5px;
+  padding: 13px 30px;
+  font-size: 20px;
 }
 @media screen and (min-width: 300px) {
-  #freshproducts h1 {
-    font-size: 40px;
+  #freshproducts .textbox {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 20px;
   }
-  #freshproducts h5 {
-    font-size: 15px;
-  }
-  #freshproducts .btn {
-    padding: 10px 20px;
-    font-size: 15px;
-    margin-top: 10px;
+  #freshproducts .textbox .btn {
+    font-size: 18px;
+    padding: 10px 15px;
+    margin-left: 70px;
+    width: 150px;
   }
   #freshproducts img {
     width: 400px;
-    margin-top: 20px;
+    margin-top: 30px;
   }
 }
 @media screen and (min-width: 800px) {
-  #freshproducts h1 {
-    font-size: 60px;
+  #freshproducts .textbox {
+    display: flex;
+    text-align: left;
   }
-  #freshproducts h5 {
+  #freshproducts .textbox .btn {
     font-size: 20px;
-  }
-  #freshproducts .btn {
-    padding: 13px 30px;
-    font-size: 20px;
+    padding: 10px 34px;
+    margin-left: 0;
+    width: 200px;
   }
   #freshproducts img {
     width: 520px;
@@ -220,7 +225,6 @@ header {
 }
 
 #browse {
-  background-color: #f1f8f9;
   padding: 50px 0;
 }
 #browse .textbox {
@@ -245,7 +249,6 @@ header {
 #browse .btnbox .btn {
   font-size: 18px;
   border: 0.5px solid #bdbdbd;
-  padding: 15px 46px;
   margin: 10px 20px;
   border-radius: 5px;
 }
@@ -294,9 +297,15 @@ header {
   color: white;
 }
 @media screen and (min-width: 300px) {
+  #browse {
+    background-color: #f1f8f9;
+  }
   #browse .btnbox {
     display: flex;
     flex-direction: column;
+  }
+  #browse .btnbox .btn {
+    padding: 10px 45px;
   }
   #browse .box {
     display: flex;
@@ -309,7 +318,7 @@ header {
     line-height: 1.4;
     margin-left: 100px;
   }
-  #browse .box .imgbox {
+  #browse .box img {
     margin-right: 10px;
   }
   #browse .big {
@@ -317,10 +326,38 @@ header {
     margin-top: 30px;
   }
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 600px) {
+  #browse .btnbox {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+  #browse .btnbox .btn {
+    padding: 12px 48px;
+  }
+  #browse .box {
+    display: flex;
+    flex-flow: row nowrap;
+  }
+  #browse .box .textbox {
+    width: 600px;
+    margin-left: 10px;
+  }
+  #browse .box .minibox {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 900px) {
+  #browse {
+    background-color: white;
+  }
   #browse .btnbox {
     display: flex;
     flex-direction: row;
+  }
+  #browse .btnbox .btn {
+    padding: 12px 48px;
   }
   #browse .box {
     display: flex;
@@ -330,10 +367,6 @@ header {
     width: auto;
     text-align: left;
     margin-left: 20px;
-  }
-  #browse .box .minibox {
-    display: flex;
-    justify-content: space-between;
   }
   #browse .big {
     padding: 17px 53px;
@@ -424,7 +457,7 @@ header {
     padding: 8px 15px;
     margin-left: 70px;
   }
-  #callour .imgbox {
+  #callour img {
     margin-top: 40px;
     width: 300px;
   }
@@ -439,7 +472,7 @@ header {
     padding: 10px 34px;
     margin-left: 0;
   }
-  #callour .imgbox {
+  #callour img {
     width: 520px;
   }
 }
@@ -448,7 +481,7 @@ header {
   padding: 50px 0;
 }
 #support .textbox {
-  padding-top: 90px;
+  padding-top: 70px;
 }
 #support .textbox h1 {
   font-size: 60px;
@@ -473,20 +506,16 @@ header {
 @media screen and (min-width: 300px) {
   #support .textbox {
     width: 550px;
-    height: 400px;
   }
-  #support .imgbox img {
+  #support img {
     width: 550px;
-    height: 400px;
   }
 }
 @media screen and (min-width: 800px) {
   #support .textbox {
-    width: 630px;
-    height: 500px;
+    width: 600px;
   }
-  #support .imgbox img {
-    width: 630px;
-    height: 500px;
+  #support img {
+    width: 600px;
   }
 }/*# sourceMappingURL=style.css.map */

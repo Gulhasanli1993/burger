@@ -1,5 +1,4 @@
 #browse
-    background-color: #f1f8f9
     padding: 50px 0
     .textbox
         width: 500px
@@ -20,7 +19,6 @@
         .btn
             font-size: 18px
             border: 0.5px solid #bdbdbd
-            padding: 15px 46px
             margin: 10px 20px
             border-radius: 5px
         .bgc
@@ -61,9 +59,12 @@
         color: #ffff
 
     @media screen and ( min-width: 300px)
+        background-color: #f1f8f9
         .btnbox
             display: flex
             flex-direction: column
+            .btn
+                padding: 10px 45px
         .box
             display: flex
             flex-direction: column
@@ -73,16 +74,35 @@
                 margin-top: 10px
                 line-height: 1.4
                 margin-left: 100px
-            .imgbox
+            img
                 margin-right: 10px
         .big
             padding: 12px 48px
             margin-top: 30px
+    @media screen and ( min-width: 600px )
+        .btnbox
+            display: flex
+            flex-flow: row wrap
+            justify-content: center
+            .btn
+                padding: 12px 48px
+        .box
+            display: flex
+            flex-flow: row nowrap
+            .textbox
+                width: 600px
+                margin-left: 10px
+            .minibox
+                display: flex
+                justify-content: space-between
 
-    @media screen and ( min-width: 800px )
+    @media screen and ( min-width: 900px )
+        background-color: #ffff
         .btnbox
             display: flex
             flex-direction: row
+            .btn
+                padding: 12px 48px
         .box
             display: flex
             flex-direction: row
@@ -90,9 +110,7 @@
                 width: auto
                 text-align: left
                 margin-left: 20px
-            .minibox
-                display: flex
-                justify-content: space-between
+
         .big
             padding: 17px 53px
             margin-top: 50px
